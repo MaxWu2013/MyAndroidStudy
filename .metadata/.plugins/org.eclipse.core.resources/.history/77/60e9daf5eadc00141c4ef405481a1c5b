@@ -1,0 +1,86 @@
+package com.example.myandroidstores.taskframework;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+
+/**
+ * 介绍  TaskFrameWork 的用法
+ * @author ASRock
+ *
+ */
+public class BaseActivity extends Activity implements OnDataListener{
+
+	private CommonAsyncTask mCommonTask ; 
+	private static final int TYPE_ONE=1;
+	private static final int TYPE_TWO=2;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		//启动后台
+		doConnection(TYPE_ONE);
+		
+		Object param = new Object();
+		doConnection(TYPE_TWO, param);
+		
+	}
+	
+	
+	protected void doConnection(int type) {
+		doConnection(type, null);
+	}
+
+	protected void doConnection(int type, Object  params) {
+		mCommonTask = new CommonAsyncTask();
+		mCommonTask.setDataListener(this);
+		mCommonTask.doConnection(type, params);
+	}
+
+	@Override
+	public Result doFetchData(Object obj) throws Exception {
+		//后台线程
+		Result result = (Result)obj ;   
+		Object[] params = result.getParams(); //获取参数
+		
+		switch(result.getType()){ // 获取类型
+		
+		case TYPE_ONE:
+			
+			break;
+		case TYPE_TWO:
+			break;
+		}
+		
+		Object data = new Object();  //结果数据
+		result.setData(data);
+		
+		return result;
+	}
+
+	@Override
+	public void doProcessData(Object obj) throws Exception {
+		//UI线程 ，处理结果
+		
+		Result result = (Result)obj ;
+		
+		Object data = result.getData();
+		
+		switch(result.getType()){
+		case TYPE_ONE:
+			break;
+		case TYPE_TWO:
+			break;
+		}
+		
+	}
+
+	@Override
+	public void doErrorData(Object obj) throws Exception {
+		//UI线程
+		
+	}
+	
+	
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue3">#ff00ff00</color>
+    
+    <!--  背景色-->
+    <color name="bg_step_0">#00000000</color>
+    <!-- 一般背景灰 -->
+    <color name="bg_step_1">#FFF0F5F7</color>
+    <!-- 淡蓝色 -->
+    <color name="bg_step_2">#FF67B8E3</color>
+    <!-- 灰色背景 -->
+    <color name="bg_step_3">#FFE3E3E3</color>
+    <!-- 半透明色 -->
+    <color name="bg_step_4">#64000000</color>
+    <!-- 灰色线 -->
+    <color name="bg_step_5">#ffe4e4e4</color>
+    <!-- 浅浅的灰色 -->
+    <color name="bg_step_6">#FFF5F3EF</color>
+    <!-- 橙色 -->
+    <color name="bg_orange">#FFFF6600</color>
+</resources>

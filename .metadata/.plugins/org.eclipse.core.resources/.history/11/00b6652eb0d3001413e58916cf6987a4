@@ -1,0 +1,5 @@
+package com.example.androidiocframework.annotation;
+
+public class DynamicHandler {
+
+}

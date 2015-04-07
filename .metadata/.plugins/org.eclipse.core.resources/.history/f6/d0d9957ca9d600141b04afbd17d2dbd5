@@ -1,0 +1,5 @@
+package com.example.androidiocframework.base;
+
+public class BaseFragment {
+
+}
