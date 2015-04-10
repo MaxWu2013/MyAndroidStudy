@@ -1,6 +1,9 @@
 bin
 .suo
 .matadata
-.setting
-gen
-obj
+../.settings
+../.classpath
+../.project
+../bin
+../gen
+

@@ -1,0 +1,10 @@
+package com.example.myandroidstores;
+
+public interface OnActivityLifeCycleListener {
+	
+	public void onActivityStart(Activity activity);
+	
+	public void onActivityRestart(BaseFragmentActivity activity);
+	
+	public void onActivityStop()
+}

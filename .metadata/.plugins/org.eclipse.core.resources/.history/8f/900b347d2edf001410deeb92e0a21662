@@ -1,0 +1,10 @@
+package com.example.myandroidstores;
+
+/**
+ * 管理Activty生命周期
+ * @author ASRock
+ *
+ */
+public interface IActivityLifeCycleManager {
+
+}

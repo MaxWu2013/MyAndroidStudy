@@ -1,0 +1,10 @@
+package com.example.myandroidstores;
+
+public interface OnActivityLifeCycleListener {
+	
+	public void onActivityStart(IActivityLifeCallbackManager activity);
+	
+	public void onActivityRestart(IActivityLifeCallbackManager activity);
+	
+	public void onActivityStop(IActivityLifeCallbackManager activity);
+}

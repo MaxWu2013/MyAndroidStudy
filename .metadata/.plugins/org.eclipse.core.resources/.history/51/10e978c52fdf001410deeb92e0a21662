@@ -1,0 +1,28 @@
+package com.example.myandroidstores;
+
+import java.lang.ref.WeakReference;
+import java.util.List;
+import java.util.WeakHashMap;
+
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+
+public abstract class BaseFragmentActivity extends FragmentActivity implements IActivityLifeCallbackManager{
+	
+	/*用于收集该activity下的所有fragmenmt*/
+	private WeakHashMap<String, BaseFragment> mFragmentCollection ;
+	
+	private List<WeakReference<OnActivityLifeCycleListener>> mLiftCycleListeners ;
+	
+	@Override
+	protected void onCreate(Bundle arg0) {
+		super.onCreate(arg0);
+		mFragmentCollection = new WeakHashMap<String, BaseFragment>();
+	}
+	
+	@Override
+	public void addLifeCallback(OnActivityLifeCycleListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+}

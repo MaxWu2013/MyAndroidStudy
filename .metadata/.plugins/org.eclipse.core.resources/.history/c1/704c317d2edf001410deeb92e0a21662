@@ -1,0 +1,5 @@
+package com.example.myandroidstores;
+
+public interface IActivityLifeCycleManager {
+
+}

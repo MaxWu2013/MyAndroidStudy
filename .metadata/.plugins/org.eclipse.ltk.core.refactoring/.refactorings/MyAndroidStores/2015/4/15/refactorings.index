@@ -3,3 +3,6 @@
 1428372432099	Rename field 'mDlgBaseView'
 1428372444290	Rename field 'mDlg'
 1428373306134	Rename method 'onInitDialogView'
+1428635149038	Rename type 'IActivityLifeCycleManager'
+1428637162106	Rename type 'IActivityLifeCallbackManager'
+1428645458068	Rename type 'BaseFragmentActivity'
