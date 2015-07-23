@@ -235,7 +235,11 @@ public class Matrix {
         mInv[ 1 + mInvOffset] = dst1  * invdet;
         mInv[ 2 + mInvOffset] = dst2  * invdet;
         mInv[ 3 + mInvOffset] = dst3  * invdet;
-
+        
+        mInv[ 3 + mInvOffset] = dst3  * invdet;
+        mInv[ 3 + mInvOffset] = dst3  * invdet;
+        mInv[ 3 + mInvOffset] = dst3  * invdet;        
+                
         mInv[ 4 + mInvOffset] = dst4  * invdet;
         mInv[ 5 + mInvOffset] = dst5  * invdet;
         mInv[ 6 + mInvOffset] = dst6  * invdet;
