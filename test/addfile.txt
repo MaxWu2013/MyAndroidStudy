@@ -1,1 +1,2 @@
 now i changed this file . go 
+now in remote , i add this line
