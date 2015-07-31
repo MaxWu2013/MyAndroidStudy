@@ -1,1 +1,2 @@
 test how to fetch and merge 
+insert a line ;
