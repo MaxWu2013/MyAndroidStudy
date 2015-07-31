@@ -1,4 +1,11 @@
-/*
+/*remote i 
+add a 
+add b
+add c
+add d
+add d
+add a
+/////////remote
  * Copyright (C) 2007 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -141,6 +148,13 @@ public class Matrix {
         final float src4  = m[mOffset +  1];
         final float src8  = m[mOffset +  2];
         final float src12 = m[mOffset +  3];
+        ////////////////////////////remote //////here i four lines
+        final float src0  = m[mOffset +  0];
+        final float src4  = m[mOffset +  1];
+        final float src8  = m[mOffset +  2];
+        final float src12 = m[mOffset +  3];
+/////////////////////////////////////remote/////////////////////////////////////////////////////////////////////////////
+
 
         final float src1  = m[mOffset +  4];
         final float src5  = m[mOffset +  5];
