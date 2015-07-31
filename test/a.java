@@ -1,3 +1,3 @@
 local i create a file name's a.java
-
-remote i add two line , and so 
+local i insert one line 
+local i insert two lineremote i add two line , and so 

@@ -1,12 +1,15 @@
-/*remote i 
+/*local   i  modify one lien
+  local   i  insert one line
+  local   i  insert two line
+  local   i  insert three line 
+remote i 
 add a 
 add b
 add c
 add d
 add d
 add a
-/////////remote
- * Copyright (C) 2007 The Android Open Source Project
+/////////remote * Copyright (C) 2007 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
