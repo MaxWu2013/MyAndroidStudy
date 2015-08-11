@@ -1,13 +1,13 @@
 package com.example.testnetworktoll;
 
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.app.Activity;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
 	TextView mNetwork ;
 	TextView mWifi ;
