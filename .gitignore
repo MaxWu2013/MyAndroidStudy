@@ -6,6 +6,9 @@ bin
 ./.project
 ./bin
 ./gen
+../.settings
+../.classpath
+../.project
 bin
 gen
 .settings
