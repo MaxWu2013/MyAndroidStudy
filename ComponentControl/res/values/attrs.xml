@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DurationControl">
+        <attr name="durationUnits">
+            <enum name="days" value="1"/>
+            <enum name="weeks" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

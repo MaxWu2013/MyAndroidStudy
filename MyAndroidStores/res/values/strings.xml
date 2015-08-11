@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyAndroidStores</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="net_work_connected_mobile">切换到 2G/3G网络</string>
+	<string name="net_work_connected_wifi">切换到wifi网络</string>
+	<string name="net_work_connected_fail">网络连接失败</string>
+</resources>
