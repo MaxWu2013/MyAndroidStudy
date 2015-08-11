@@ -1,7 +1,0 @@
-package com.example.androidiocframework.base;
-
-import android.support.v4.app.FragmentActivity;
-
-public class BaseFrameActivity extends FragmentActivity{
-
-}

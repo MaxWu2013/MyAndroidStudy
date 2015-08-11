@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;SwitcherUtils.java&apos; to &apos;MyAndroidStores/src/com.example.myandroidstores.fragment&apos;&#x0D;&#x0A;- Original project: &apos;TestFragmentLifeCircle&apos;&#x0D;&#x0A;- Destination element: &apos;MyAndroidStores/src/com.example.myandroidstores.fragment&apos;&#x0D;&#x0A;- Original element: &apos;com.example.testfragmentlifecircle.SwitcherUtils.java&apos;" description="Copy compilation unit" destination="=MyAndroidStores/src&lt;com.example.myandroidstores.fragment" element1="/src&lt;com.example.testfragmentlifecircle{SwitcherUtils.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1428633067479" units="1" version="1.0"/>
-</session>
