@@ -197,11 +197,14 @@ public class ContainerViewPager extends ViewPagerWidget<Integer>{
                 !"".equals(message.trim()) &&
                 !"".equals(phoneNumber.trim())){
             Logger.m("message = "+message+" phoneNumber="+phoneNumber);
+            Intent flagOneIntent = new Intent(SENT);
+            flagOneIntent.putExtra(PHONE_NUM,phoneNumber);
             PendingIntent sentPI = PendingIntent.getBroadcast(getActivity(), 0,
-                    new Intent(SENT), 0);
-
+                    flagOneIntent, 0);
+            Intent flagTwoIntent = new Intent(DELIVERED);
+            flagTwoIntent.putExtra(PHONE_NUM,phoneNumber);
             PendingIntent deliveredPI = PendingIntent.getBroadcast(getActivity(), 0,
-                    new Intent(DELIVERED), 0);
+                    flagTwoIntent, 0);
 
             //---when the SMS has been sent---
             getActivity().registerReceiver(receiverOne, filterOne);
@@ -215,12 +218,16 @@ public class ContainerViewPager extends ViewPagerWidget<Integer>{
     }
     private String SENT = "SMS_SENT";
     private String DELIVERED = "SMS_DELIVERED";
+    private String PHONE_NUM ="PHONE_NUMBER";
     private IntentFilter filterOne = new IntentFilter(SENT);
     private IntentFilter filterTwo = new IntentFilter(DELIVERED);
 
     private BroadcastReceiver receiverOne = new BroadcastReceiver() {
         @Override
         public void onReceive(Context arg0, Intent arg1) {
+            String phoneNum = arg1.getStringExtra(PHONE_NUM);
+            Logger.m("onReceiver intent = "+arg1);
+            Logger.m("onReceiver phoneNum = "+phoneNum);
             switch (getResultCode()) {
                 case Activity.RESULT_OK:
                     Toast.makeText(getActivity().getBaseContext(), "SMS sent",
@@ -249,6 +256,9 @@ public class ContainerViewPager extends ViewPagerWidget<Integer>{
     private BroadcastReceiver receiverTwo = new BroadcastReceiver() {
         @Override
         public void onReceive(Context arg0, Intent arg1) {
+            String phoneNum = arg1.getStringExtra(PHONE_NUM);
+            Logger.m("onReceiver intent = "+arg1);
+            Logger.m("onReceiver phoneNum = "+phoneNum);
             switch (getResultCode()) {
                 case Activity.RESULT_OK:
                     Toast.makeText(getActivity().getBaseContext(), "SMS delivered",
